@@ -1,0 +1,70 @@
+//flex
+.flex{
+    &-usually{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-wrap{
+        flex-wrap: wrap;
+    }
+    &-fxdrr{
+        flex-direction: row-reverse;
+    }
+    &-fxdc{
+        flex-direction: column;
+    }
+    &-jcfe{
+        justify-content: flex-end;
+    }
+    &-jcsb{
+        justify-content: space-between;
+    }
+    &-jcc{
+        justify-content: center;
+    }
+    &-aic{
+        align-items: center;
+    }
+    &-asfe{
+        align-self: flex-end;
+    }
+}
+@include pad{
+    .flex-pad{
+        &-wrap{
+            flex-wrap: wrap;
+        }
+        &-fxdr{
+            flex-direction: row;
+        }
+        &-fxdc{
+            flex-direction: column;
+        }
+    }
+}
+@include mobile{
+    .flex-cell{
+        &-fxdc{
+            flex-direction: column;
+        }
+        &-fxdrr{
+            flex-direction: row-reverse;
+        }
+        &-fxdc{
+            flex-direction: column;
+        }
+        &-jcsb{
+            justify-content: space-between;
+        }
+        &-jcc{
+            justify-content: center;
+        }
+        &-aifs{
+            align-items: flex-start;
+        }
+        &-orderlast{
+            order: 1;
+        }
+    }
+}

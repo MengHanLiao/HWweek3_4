@@ -1,0 +1,159 @@
+//container
+.container{
+    max-width: 1130px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    @include pad{
+        max-width: 768px;
+        padding: 0 39px;
+    }
+    @include mobile{
+        max-width: 375px;
+        padding: 0 15px;
+    }
+}
+
+//link list
+.linklist{
+    display: flex;
+    &-item{
+        color: $white;
+        text-align: center;
+        &-brown:hover,&-brown.active{
+            border-bottom: 8px solid $primary;
+        }
+        @include mobile{
+            &-brown:hover,&-brown.active{
+                border-bottom-width: 4px;
+            }
+        }
+    }
+    @include mobile{
+        &-cell{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &-cell-item{
+            width: 100%;
+            border: 1px solid $white;
+            padding: 8px;
+        }
+    }    
+}
+.hover-bg{
+    &:hover{
+        background: $brown;
+    }
+}
+
+//tag
+.tag{
+    color: $primary;
+    font-family: $font-en;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    @include pad{
+        font-size: 16px;
+    }
+}
+
+//breadcrumb
+.breadcrumb{
+    display: flex;
+    &-item{
+        a{
+            color: $black;
+            display: inline-block;
+        }
+        & + &::before{
+            content: '/';
+            margin-left: $space-xs;
+            margin-right: $space-xs;
+        }
+    }
+    & &-item:last-child a{
+      color: $primary;  
+    }
+}
+
+//pagination
+.pages{
+    display: flex;
+    justify-content: center;
+    &-item:first-child &-link,&-item:last-child &-link{
+        padding: 11px 12px;
+        font-size: 19px;
+        @include mobile{
+            font-size: 14px;
+            padding: 14px 12px 13px;
+        }
+    }
+    &-link{
+        color: $gray-dk;
+        padding: 12px 15px;
+        border: 1px solid #555555;
+        font-family: $font-en;
+        font-size: 18px;
+        @include mobile{
+            font-size: 16px;
+            padding: 12px 15px;
+        }
+        &:hover{
+            background: $black;
+            color: $white;
+        }
+        &.active{
+           background: $black;
+            color: $white; 
+        }
+    } 
+}
+
+//form
+.form{
+    &-label{
+        display: inline-block;
+        margin-top: 16px;
+        margin-bottom: 4px;
+        @include pad{
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    }
+    &-input{
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid $black;
+        background: $white-dk;
+        @include pad{
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+    }
+    &-button{
+        display: block;
+        width: 45%;
+        text-align: center;
+        background-color: $primary;
+        color: $white;
+        border: none;
+        padding: 16px 0;
+        cursor:pointer;
+        margin: 36px auto 0;
+        @include pad{
+            margin-top: 16px;
+        }
+    }
+    &-select{
+        width: 30%;
+        border: 1px solid #CED4DA;
+        font-size: $fz-m;
+        color: #495057;
+        padding: 8px;
+        @include mobile{
+            width: 75%;
+        }
+    }
+}

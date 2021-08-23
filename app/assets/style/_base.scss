@@ -1,0 +1,22 @@
+/* rwd img css */
+img{
+    display: block;
+	max-width: 100%;
+	height: auto;
+}
+  
+/* 全域 border box */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+}
+h1,h2,h3{
+    font-weight: bold;
+}

@@ -1,23 +1,23 @@
-$color: #00cc99;
+@import "variables";
+@import "reset";
+@import "base";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "mixin";
+@import "component";
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import "utilities/display";
+@import "utilities/flex";
+@import "utilities/spacing";
+@import "utilities/text";
+
+
+@import "pages/layout";
+@import "pages/index";
+@import "pages/series";
+@import "pages/blog";
+@import "pages/store";
+
+@import "utilities/other";

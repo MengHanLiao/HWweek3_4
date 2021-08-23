@@ -1,0 +1,38 @@
+//display
+.d{
+    &-none{
+        display: none;
+    }
+    &-block{
+        display: block;
+    }
+    &-inlineblock{
+        display: inline-block;
+    }
+    &-flex{
+        display: flex;
+    }
+}
+@include pad{
+    .d-pad{
+        &-flex{
+            display: flex;
+        }
+        &-none{
+            display: none;
+        }
+    }
+}
+@include mobile{
+    .d-cell{
+        &-none{
+            display: none;
+        }
+        &-flex{
+            display: flex;
+        }
+        &-block{
+            display: block;
+        }
+    }
+}

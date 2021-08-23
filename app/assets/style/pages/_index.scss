@@ -1,0 +1,128 @@
+//special width
+.spw-series{
+    max-width: 635px;
+    @include pad{
+        max-width: 390px;
+    }
+    @include mobile{
+        max-width: 345px;
+    }
+}
+.spw-form{
+    width: 66%;
+    margin-left:auto;
+    margin-right: auto;
+    @include mobile{
+        width: 100%;
+    }
+}
+.spw-info{
+    max-width: 255px;
+}
+//cobrand picture in mobile
+@include mobile{
+    .p-cell-relative{
+        position: relative;
+        width: 345px;
+        margin: 0 auto;
+    }
+    .p-cell-absolute{
+        position: absolute;
+        top: 49px;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+    }
+}
+//background
+.banner-top{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+    height: 840px;
+    @include mobile{
+        background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
+        height: 394px;
+    }
+}
+.bg-cobrand{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    height: 705px;
+    @include pad{
+        height: 452px;
+    }
+    @include mobile{
+        height: 719px;
+    }
+}
+.bg-brand1{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true");
+    width: 50%;
+    height: 455px;
+    @include pad{
+        height: 278px;
+    }
+    @include mobile{
+        width: 345px;
+        height: 291px;
+    }
+}
+.bg-brand2{
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true");
+    width: 50%;
+    height: 455px;
+    @include pad{
+        height: 278px;
+    }
+    @include mobile{
+        width: 345px;
+        height: 291px;
+    }
+}
+.banner-top,.bg-cobrand,.bg-brand1,.bg-brand2{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-mask{
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+//recommand card
+.recommandCard{
+    width: 23%;
+    border: 1px solid $gray-lt;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px $shadow;
+    @include pad{
+        width: 47%;
+        margin-bottom: 32px;
+    }
+    @include mobile{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    &-img{
+        width: 100%;
+        height: 256px;
+        object-fit: cover;
+        border-radius: 4px 4px 0 0;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        padding: 16px;
+    }
+    &-title{
+        font-size: 14px;
+        margin-bottom: 8px;
+        @include pad{
+            font-size: 16px;
+        }
+    }
+    &-subtext{
+        font-size: 14px;
+        color: $gray;
+        margin-top: auto;
+    }
+}
+

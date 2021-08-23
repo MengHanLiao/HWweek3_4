@@ -1,0 +1,497 @@
+//padding
+.px{
+    &-11{
+        padding-right: $space-11;
+        padding-left: $space-11;
+    } 
+}
+@include pad{
+    .px-pad{
+        &-5{
+            padding-right: $space-5;
+            padding-left: $space-5;
+        }
+    }
+}
+
+.py{
+    &-xs{
+        padding-top: $space-xs;
+        padding-bottom: $space-xs;
+    }
+    &-m{
+        padding-top: $space-m;
+        padding-bottom: $space-m;
+    }
+    &-lg{
+        padding-top: $space-lg;
+        padding-bottom: $space-lg;
+    }
+
+    &-1{
+        padding-top: $space;
+        padding-bottom: $space;
+    }
+    &-2{
+        padding-top: $space-2;
+        padding-bottom: $space-2;
+    }
+    &-3{
+        padding-top: $space-3;
+        padding-bottom: $space-3;
+    }
+    &-4{
+        padding-top: $space-4;
+        padding-bottom: $space-4;
+    }
+
+    &-10{
+        padding-top: $space-10;
+        padding-bottom: $space-10;
+    }
+    &-11{
+        padding-top: $space-11;
+        padding-bottom: $space-11;
+    }
+    &-12{
+        padding-top: $space-12;
+        padding-bottom: $space-12;
+    }
+}
+@include pad{
+    .py-pad{
+        &-1{
+            padding-top: $space;
+            padding-bottom: $space;
+        }
+        &-2{
+            padding-top: $space-2;
+            padding-bottom: $space-2;
+        }
+    }
+}
+@include mobile{
+    .p-cell{
+        &-0{
+            padding: 0;
+        }
+        &-1{
+            padding: $space;
+        }
+    }
+    .py-cell{
+        &-1{
+            padding-top: $space;
+            padding-bottom: $space;
+        }
+        &-3{
+            padding-top: $space-3;
+            padding-bottom: $space-3;
+        }
+    }
+}
+.pl{
+    &-1{
+        padding-left: $space;
+    }    
+    &-2{
+        padding-left: $space-2;
+    }
+}
+@include mobile{
+    .pl-cell{
+        &-1{
+            padding-left: $space;
+        }
+    }
+}
+
+.pt{
+    &-m{
+        padding-top: $space-m;
+    }
+    &-lg{
+        padding-top: $space-lg;
+    }
+    &-3{
+        padding-top: $space-3;
+    }
+    &-5{
+        padding-top: $space-5;
+    }
+    &-10{
+        padding-top: $space-10;
+    }    
+}
+@include pad{
+    .pt-pad{
+        &-lg{
+            padding-top: $space-lg;
+        }
+        
+        &-3{
+            padding-top: $space-3;
+        }
+        &-5{
+            padding-top: $space-5;
+        }
+        &-7{
+            padding-top: $space-7;
+        }
+    }
+}
+@include mobile{
+    .pt-cell{
+        &-m{
+            padding-top: $space-m;
+        }
+        &-1{
+            padding-top: $space;
+        }
+        &-3{
+            padding-top: $space-3;
+        }
+        &-4{
+            padding-top: $space-4;
+        }
+    }
+}
+
+.pb{
+    &-6{
+        padding-bottom: $space-6;
+    }
+    &-7{
+        padding-bottom: $space-7;
+    }
+    &-8{
+        padding-bottom: $space-8;
+    }
+    &-9{
+        padding-bottom: $space-9;
+    }
+    &-10{
+        padding-bottom: $space-10;
+    }
+}
+@include pad{
+    .pb-pad{
+        &-0{
+            padding-bottom: 0;
+        }
+        &-2{
+            padding-bottom: $space-2;
+        }
+        &-3{
+            padding-bottom: $space-3;
+        }
+        &-4{
+            padding-bottom: $space-4;
+        }
+        &-7{
+            padding-bottom: $space-7;
+        }
+    }
+}
+@include mobile{
+    .pb-cell{
+        &-0{
+            padding-bottom: 0;
+        }
+        &-1{
+            padding-bottom: $space;
+        }
+        &-3{
+            padding-bottom: $space-3;
+        }
+        &-5{
+            padding-bottom: $space-5;
+        }
+    }
+}
+
+//margin
+.my{
+    &-3{
+        margin-top: $space-3;
+        margin-bottom: $space-3;
+    }
+}
+@include pad{
+    .my-pad{
+        &-2{
+            margin-top: $space-2;
+            margin-bottom: $space-2;
+        }
+    }
+}
+
+.ml{
+    &-m{
+        margin-left: $space-m;
+    }
+    &-12{
+        margin-left: $space-12;
+    }
+}
+@include pad{
+    .ml-pad{
+        &-lg{
+            margin-left: $space-lg;
+        }
+    }
+}
+@include mobile{
+    .ml-cell{
+        &-0{
+            margin-left: 0;
+        }
+        &-xs{
+            margin-left: $space-xs;
+        }
+    }
+}
+
+.mr{
+    &-a{
+        margin-right: auto;
+    }
+    &-m{
+        margin-right: $space-m;
+    }
+
+    &-1{
+        margin-right: $space;
+    }
+    &-2{
+        margin-right: $space-2;
+    }
+    &-3{
+        margin-right: $space-3;
+    }
+    &-4{
+        margin-right: $space-4;
+    }
+    &-5{
+        margin-right: $space-5;
+    }
+    &-6{
+        margin-right: $space-6;
+    }
+    &-7{
+        margin-right: $space-7;
+    }
+    &-8{
+        margin-right: $space-8;
+    }
+}
+@include pad{
+    .mr-pad{
+        &-m{
+            margin-right: $space-m;
+        }
+
+        &-0{
+            margin-right: 0;
+        }
+        &-1{
+            margin-right: $space;
+        }
+        &-2{
+            margin-right: $space-2;
+        }
+        &-3{
+            margin-right: $space-3;
+        }
+        &-4{
+            margin-right: $space-4;
+        }
+        &-5{
+            margin-right: $space-5;
+        }
+    }
+}
+@include mobile{
+    .mr-cell{
+        &-0{
+            margin-right: 0;
+        }
+        &-xs{
+            margin-right: $space-xs;
+        }
+        &-1{
+            margin-right: $space;
+        }
+        &-3{
+            margin-right: $space-3;
+        }
+    }
+}
+
+.mt{
+    &-0{
+        margin-top: 0;
+    }
+    &-1{
+        margin-top: $space;
+    }
+    &-2{
+        margin-top: $space-2;
+    }
+    &-3{
+        margin-top: $space-3;
+    }
+    &-4{
+        margin-top: $space-4;
+    }
+    &-5{
+        margin-top: $space-5;
+    }
+}
+@include pad{
+    .mt-pad{
+        &-1{
+            margin-top: $space;
+        }
+        &-3{
+            margin-top: $space-3;
+        }
+    }
+}
+@include mobile{
+    .mt-cell{
+        &-s{
+            margin-top: $space-s;
+        }
+        &-1{
+            margin-top: $space;
+        }
+        &-3{
+            margin-top: $space-3;
+        }
+    }
+}
+
+.mb{
+    &-xs{
+        margin-bottom: $space-xs;
+    }
+    &-m{
+        margin-bottom: $space-m;
+    }
+    &-lg{
+        margin-bottom: $space-lg;
+    }
+
+    &-1{
+        margin-bottom: $space;
+    }
+    &-2{
+        margin-bottom: $space-2;
+    }
+    &-3{
+        margin-bottom: $space-3;
+    }
+    &-4{
+        margin-bottom: $space-4;
+    }
+    &-5{
+        margin-bottom: $space-5;
+    }
+    &-6{
+        margin-bottom: $space-6;
+    }
+    &-7{
+        margin-bottom: $space-7;
+    }
+    &-8{
+        margin-bottom: $space-8;
+    }
+    &-9{
+        margin-bottom: $space-9;
+    }
+    &-10{
+        margin-bottom: $space-10;
+    }
+    &-11{
+        margin-bottom: $space-11;
+    }
+    &-12{
+        margin-bottom: $space-12;
+    }
+    &-13{
+        margin-bottom: $space-13;
+    }
+}
+@include pad{
+    .mb-pad{
+        &-xs{
+            margin-bottom: $space-xs;
+        }
+        &-s{
+            margin-bottom: $space-s;
+        }
+        &-m{
+            margin-bottom: $space-m;
+        }
+        &-0{
+            margin-bottom: 0;
+        }
+        &-1{
+            margin-bottom: $space;
+        }
+        &-2{
+            margin-bottom: $space-2;
+        }
+        &-3{
+            margin-bottom: $space-3;
+        }
+        &-4{
+            margin-bottom: $space-4;
+        }
+        &-5{
+            margin-bottom: $space-5;
+        }
+
+        &-8{
+            margin-bottom: $space-8;
+        }
+        &-9{
+            margin-bottom: $space-9;
+        }
+    }
+}
+@include mobile{
+    .mb-cell{
+        &-0{
+            margin-bottom: 0;
+        }
+        &-xs{
+            margin-bottom: $space-xs;
+        }
+        &-s{
+            margin-bottom: $space-s;
+        }
+        &-m{
+            margin-bottom: $space-m;
+        }
+        &-1{
+            margin-bottom: $space;
+        }
+        &-2{
+            margin-bottom: $space-2;
+        }
+        &-3{
+            margin-bottom: $space-3;
+        }
+        &-4{
+            margin-bottom: $space-4;
+        }
+        &-5{
+            margin-bottom: $space-5;
+        }
+        &-7{
+            margin-bottom: $space-7;
+        }
+    }
+}

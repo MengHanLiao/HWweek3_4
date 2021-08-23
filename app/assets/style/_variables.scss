@@ -1,0 +1,54 @@
+//color
+$primary: #AA0601;
+$brown: #650300;
+$brown-lt: #B75929;
+$brown-dk: #5F3E2D;
+$gray: #707070;
+$gray-lt: #DEE2E6;
+$gray-dk: #555555;
+$white: #FFFFFF;
+$white-dk: #FBF2F2;
+$black: #000000;
+$black-lt: #212529;
+$black-bolg: #0A0A0A;
+$shadow: #00000029;
+
+//font-size
+$font-base: 16px;
+$fz-s: $font-base*0.875;   //14px
+$fz-m: $font-base*1.125;   //18px
+$fz-l: $font-base*2.625;   //42px
+$fz-xl:$font-base*6.25;    //100px
+
+$fz-1: $font-base;         //16px
+$fz-2: $font-base*1.25;    //20px
+$fz-3: $font-base*1.5;     //24px
+$fz-4: $font-base*1.75;    //28px
+$fz-5: $font-base*2;       //32px
+$fz-6: $font-base*2.25;    //36px
+$fz-7: $font-base*3;       //48px
+$fz-8: $font-base*4;       //64px
+$fz-9: $font-base*4.5;     //72px
+
+//space
+$space: 8px;
+$space-2: $space*2;    //16px
+$space-3: $space*3;    //24px
+$space-4: $space*4;    //32px
+$space-5: $space*5;    //40px
+$space-6: $space*6;    //48px
+$space-7: $space*7;    //56px
+$space-8: $space*8;    //64px
+$space-9: $space*9;    //72px
+$space-10: $space*10;  //80px
+$space-11: $space*11;  //88px
+$space-12: $space*12;  //96px
+$space-13: $space*13;  //104px
+
+$space-xs:$space*0.5;    //4px
+$space-s: $space*2.5;    //8px
+$space-m: $space*3.75;   //30px
+$space-lg: $space*7.5;   //60px
+
+//font-family
+$font-en: 'Roboto', sans-serif;
